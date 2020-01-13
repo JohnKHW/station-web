@@ -12,7 +12,7 @@ build-type:     Simple
 executable station
   default-language: Haskell2010
   main-is: station.hs
-  hs-source-dirs: run
+  hs-source-dirs: bin
   default-extensions: LambdaCase NegativeLiterals OverloadedStrings
   ghc-options: -Wall -Wno-tabs -threaded -rtsopts -with-rtsopts=-N
   other-modules:
@@ -23,15 +23,23 @@ executable station
     Station.Database.User
     Station.Database.Subject
     Station.Database.Course
+    Station.Database.Lesson
+    Station.Database.Question
+    Station.Database.Answer
+    Station.Database.Work
     Station.HTTP
     Station.Web
+    Station.Web.Tool
+    Station.Web.Session
     Station.Web.Bin
     Station.Web.SysOp
+    Station.Web.Learn
   build-depends:
     base,
     bytestring,
     utf8-string,
     filepath,
+    directory,
     time,
     xml,
     scrypt,
@@ -41,4 +49,5 @@ executable station
     wai-extra,
     wai-app-static,
     warp,
+    postgresql-libpq,
     postgresql-simple

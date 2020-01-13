@@ -1,5 +1,5 @@
 module Station.HTTP (
-	log, respond_200, respond_400, respond_401, respond_403, respond_404, respond_405, respond_409,
+	log, respond_200, respond_400, respond_401, respond_403, respond_404, respond_405, respond_409, respond_422,
 	respond_redirect, respond_301, respond_303, respond_XML,
 	auth_user
 ) where
@@ -77,6 +77,10 @@ respond_405 _ respond =
 respond_409 :: String -> Wai.Application
 respond_409 message _ respond =
 	respond (Wai.responseLBS HTTP.status409 [("Content-Type", "text/plain; charset=ASCII")] (BS.L.U8.fromString message))
+
+respond_422 :: String -> Wai.Application
+respond_422 message _ respond =
+	respond (Wai.responseLBS HTTP.status422 [("Content-Type", "text/plain; charset=ASCII")] (BS.L.U8.fromString message))
 
 respond_redirect :: HTTP.Status -> BS.L.ByteString -> BS.ByteString -> Wai.Application
 respond_redirect status text location _ respond =

@@ -10,6 +10,8 @@
 	<html>
 		<head>
 			<title>SysOp: Account</title>
+			<link rel="stylesheet" type="text/css" href="base.css"/>
+			<script type='application/ecmascript' src='delete_disable.js' async=''/>
 		</head>
 		<body>
 			<xsl:call-template name='menubar'/>
@@ -46,6 +48,12 @@
 									<xsl:value-of select='.'/>
 								</xsl:attribute>
 							</input>
+							<label>
+								Mark
+								<input type='text' name='mark' readonly=''>
+									<xsl:attribute name='value'><xsl:value-of select='@mark'/></xsl:attribute>
+								</input>
+							</label>
 							<br/>
 							<label>
 								Name
@@ -73,6 +81,14 @@
 							<label>
 								New Password
 								<input type='text' name='password'/>
+							</label>
+							<label>
+								Lock
+								<input type='checkbox' name='lock'>
+									<xsl:if test='@lock'>
+										<xsl:attribute name='checked'/>
+									</xsl:if>
+								</input>
 							</label>
 							<label>
 								Delete

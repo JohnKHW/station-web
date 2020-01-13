@@ -11,6 +11,7 @@
 		<head>
 			<title>SysOp: Subject</title>
 			<link rel="stylesheet" type="text/css" href="../base.css"/>
+			<link rel="stylesheet" type="text/css" href="/base.css"/>
 			<script type='application/ecmascript' src='../delete_disable.js' async=''/>
 		</head>
 		<body>
@@ -42,7 +43,7 @@
 			<section>
 				<h1>Create course</h1>
 				<form method='POST'>
-					<xsl:attribute name='action'>../courses/<xsl:value-of select='identifier'/></xsl:attribute>
+					<xsl:attribute name='action'>../course/new/<xsl:value-of select='identifier'/></xsl:attribute>
 					<label>
 						Title
 						<div class='flex'>
@@ -67,9 +68,7 @@
 							<xsl:value-of select='title'/>
 						</a>
 					</h2>
-					<p>
-							<xsl:value-of select='description'/>
-					</p>
+					<pre><xsl:value-of select='description'/></pre>
 				</xsl:for-each>
 			</section>
 		</body>

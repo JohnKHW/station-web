@@ -17,4 +17,4 @@ public_home :: IsString s => s
 public_home = fromString "/public/home.xhtml"
 
 private_home :: IsString s => s
-private_home = fromString "/home.xml"
+private_home = fromString "/home"
