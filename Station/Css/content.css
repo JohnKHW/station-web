@@ -1,36 +1,33 @@
-body{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-a{
-    text-decoration: none;
-}
-
 .container-content{
     padding: 0 80px;
     background-color: rgba(0,0,0,0.05);
+    width: auto;
+}
+.container-content::after{
+    content: ".";
+    color: transparent;
 }
 .container-content .subject{
     border-bottom: 4px solid rgba(0,0,0,0.1);
     display: flex;
-    width: 50%;
+    width: 30%;
     margin-bottom: 30px;
 }
-
 .container-content .subject-title{
     padding: 15px;
     padding-top: 40px;
     cursor: pointer;
     position: relative;
+    width: 100px;
+    text-align:center; 
+    display: flex;
+    justify-content: center;
 }
-
 .container-content .subject-title a{
     color: black;
-    font-weight: 500;
+    
+    font-weight: bold;
 }
-
 .container-content .subject-title::after{
     content: "";
     position: absolute;
@@ -38,35 +35,57 @@ a{
     left: 0;
     bottom: -4px;
 }
-
 .container-content .subject-title:hover::after{
     border-bottom: 4px solid black;
 }
-
-.content .card-course{
-    background-color: white;
-    box-shadow: 0 0 5px rgba(0,0,0,0.1);
-    height: 200px;
-    width: 400px;
+.container-content .content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
-
-.content .card-course .title{
+.container-content .card-course{
+    margin: 20px;
+    background-color: white;
+    box-shadow: 0 0 25px rgba(0,0,0,0.15);
+    height: 200px;
+    width: 350px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.container-content .card-course .title{
     font-weight: bold;
     font-size: 1.3em;
     padding: 15px;
 }
-
-.content .card-course .description{
+.container-content .card-course .title:hover{
+    background: rgba(0, 0, 0, 0.13);
+}
+.container-content .card-course .description{
     line-height: 1.5;
     padding: 15px;
     padding-top: 0;
+    word-wrap: break-word;
+    height: 80px;
+    overflow: auto;
+    border-bottom: 2px solid rgba(0,0,0,0.1);
 }
-
-
-.content .card-course .tail{
-    border-top: 2px solid rgba(0,0,0,0.07);
+.container-content .card-course .tail{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px;
+    height: 20px;
+    transition: 0.2s;
+}
+.container-content .card-course .tail:hover{
+    background: rgba(0, 0, 0, 0.1);
+}
+.container-content .tail .enroll a{
+    color: rgb(22, 158, 22);
+}
+.container-content .tail .enroll a:hover{
+    color: rgb(97, 209, 97);
+}
+.container-content .tail .point{
+    font-weight: bold;
 }

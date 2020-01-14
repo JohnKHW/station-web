@@ -1,7 +1,3 @@
-header{
-   
-
-}
 .header{
     margin: 20px 80px;
     height: 100px;
@@ -35,11 +31,20 @@ img{
 }
 .container-basic-info .user-data{
     margin: auto 20px;
+    cursor: pointer;
 }
 .container-basic-info .user-icon{
     height: 25px;
     border-radius: 50%;
     overflow: hidden;
+}
+.container-basic-info .user-data .user-score{
+    opacity: 0;
+    color: rgba(0, 0, 0, 0.5);
+    transition: 0.5s;
+}
+.container-basic-info .user-data:hover .user-score{
+    opacity: 1;
 }
 .container-menu{
     
