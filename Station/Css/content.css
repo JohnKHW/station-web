@@ -1,0 +1,72 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container-content{
+    padding: 0 80px;
+    background-color: rgba(0,0,0,0.05);
+}
+.container-content .subject{
+    border-bottom: 4px solid rgba(0,0,0,0.1);
+    display: flex;
+    width: 50%;
+    margin-bottom: 30px;
+}
+
+.container-content .subject-title{
+    padding: 15px;
+    padding-top: 40px;
+    cursor: pointer;
+    position: relative;
+}
+
+.container-content .subject-title a{
+    color: black;
+    font-weight: 500;
+}
+
+.container-content .subject-title::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: -4px;
+}
+
+.container-content .subject-title:hover::after{
+    border-bottom: 4px solid black;
+}
+
+.content .card-course{
+    background-color: white;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    height: 200px;
+    width: 400px;
+}
+
+.content .card-course .title{
+    font-weight: bold;
+    font-size: 1.3em;
+    padding: 15px;
+}
+
+.content .card-course .description{
+    line-height: 1.5;
+    padding: 15px;
+    padding-top: 0;
+}
+
+
+.content .card-course .tail{
+    border-top: 2px solid rgba(0,0,0,0.07);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
