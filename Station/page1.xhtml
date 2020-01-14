@@ -89,6 +89,16 @@
             <span class="btn-slide" onclick="setShowImgIndex(4)"></span>
         </div>
     </div>
+    <div class="container-content">
+        <div class="subject">
+            <div class="subject-title">
+                <a href=""><span>Computer</span></a>
+            </div>
+            <div class="subject-title">
+                <a href=""><span>Law</span></a>
+            </div>
+        </div>
+    </div>
 </body>
 <script>
 	let showNavBar;
@@ -106,13 +116,13 @@
 	}
     
     function setShowImgIndex(index){
-        console.log(btnSlides.length);
         btnSlides[slideIndex].style.background = "transparent";
         slides[slideIndex].style.display = "none";
         btnSlides[index].style.background = "white";
         slides[index].style.display = "block";
         slideIndex = index;
         var nextSlide = (index+1) % slides.length;
+        stopAutoSlide();
         t = setTimeout('setShowImgIndex('+nextSlide+')', 3000);
     }
     function contineSlide(){

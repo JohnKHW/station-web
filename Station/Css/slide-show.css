@@ -7,6 +7,7 @@
     align-self: center;
     justify-content: center;
     background-color: black;
+    z-index: 0;
 }
 .container-slide-show .slide{
     height: 100%;
