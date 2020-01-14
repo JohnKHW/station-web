@@ -1,0 +1,126 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+	<title>Station</title>
+	<link rel="stylesheet" href="CSS/header.css" />
+	<link rel="stylesheet" href="CSS/slide-show.css" />
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+	<script src="https://kit.fontawesome.com/d210fd4ca6.js" crossorigin="anonymous"	></script>
+	<style>
+		body{
+			margin: 0;
+		}
+	</style>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="container-basic-info">
+                <div class="logo align-bot">
+                    <div class="sponsor">
+                        <a href="https://www.collaction.hk/s/station/">
+                            <img src="./Image/station_logo_black.png"/>
+                        </a>
+                    </div>
+                    <div class="sponsor">
+                        <a href="https://www.eatonworkshop.com/hotel/hong-kong">
+                            <img src="./Image/eaton_logo_black.png"/>
+                        </a>
+                    </div>
+                </div>
+                <div class="user align-bot">
+                    <div class="user-info">
+                        <div class="welcome-msg basic-info-font">
+                            <span>Welcome Back!</span>
+                        </div>
+                        <div class="user-data">
+                            <div class="user-icon align-bot">
+                                <img src="./Image/user_icon.jpg" alt="user_icon"/>
+                            </div>
+                            <div class="user-name align-bot basic-info-font">
+                                <span class="first-name">Holok</span>
+                                <span class="last-name">Chen</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-menu">
+                <div class="menu-icon" onclick="toggNavBar(this)">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class=" menu-content">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Subject</a></li>
+                <li><a href="">Station for Open Cultures</a></li>
+                <li><a href="">EatonHK</a></li>
+                <li><a href="">g0vhk</a></li>
+                <li><a href="">Account</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="container-slide-show" onmouseover="stopAutoSlide()" onmouseout="contineSlide()">
+        <div class="slide">
+            <a href=""><img src="./Image/slide.jpeg"/></a>
+        </div>
+        <div class="slide">
+            <a href=""><img src="./Image/slide.jpg"/></a>
+        </div>
+        <div class="slide">
+            <a href=""><img src="./Image/slide.jpeg"/></a>
+        </div>
+        <div class="slide">
+            <a href=""><img src="./Image/slide.jpg"/></a>
+        </div>
+        <div class="slide">
+            <a href=""><img src="./Image/slide.jpeg"/></a>
+        </div>
+        <div class="container-btn-slide"> 
+            <span class="btn-slide" onclick="setShowImgIndex(0)"></span>
+            <span class="btn-slide" onclick="setShowImgIndex(1)"></span>
+            <span class="btn-slide" onclick="setShowImgIndex(2)"></span>
+            <span class="btn-slide" onclick="setShowImgIndex(3)"></span>
+            <span class="btn-slide" onclick="setShowImgIndex(4)"></span>
+        </div>
+    </div>
+</body>
+<script>
+	let showNavBar;
+	let navCont = document.querySelector('.menu-content');
+    let slides = document.getElementsByClassName('slide');
+    let btnSlides = document.getElementsByClassName('btn-slide');
+    let slideIndex = 0;
+    let t;
+    setShowImgIndex(slideIndex);
+    
+	function toggNavBar(self){
+        self.classList.toggle('change');
+		navCont.classList.toggle('openNav');
+		console.log(navCont.length);
+	}
+    
+    function setShowImgIndex(index){
+        console.log(btnSlides.length);
+        btnSlides[slideIndex].style.background = "transparent";
+        slides[slideIndex].style.display = "none";
+        btnSlides[index].style.background = "white";
+        slides[index].style.display = "block";
+        slideIndex = index;
+        var nextSlide = (index+1) % slides.length;
+        t = setTimeout('setShowImgIndex('+nextSlide+')', 3000);
+    }
+    function contineSlide(){
+        setShowImgIndex(slideIndex);
+    }
+    function stopAutoSlide(){ // stop the auto slide show
+        clearTimeout(t);
+        t=0;
+    }
+</script>
+</html>

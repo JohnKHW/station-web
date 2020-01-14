@@ -1,0 +1,130 @@
+header{
+   
+
+}
+.header{
+    margin: 20px 80px;
+    height: 100px;
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+img{
+    height: 100%;
+}
+.container-basic-info{
+    
+}
+.container-basic-info .logo{
+    height: 100px;
+}
+.align-bot{
+    display: inline-block;
+    vertical-align: bottom; 
+}
+.container-basic-info .sponsor{
+    display: inline;
+    margin: 10px;
+}
+.basic-info-font{
+    font-size: 17pt;
+}
+.container-basic-info .user-info{
+    display: flex;
+}
+.container-basic-info .user-data{
+    margin: auto 20px;
+}
+.container-basic-info .user-icon{
+    height: 25px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.container-menu{
+
+}
+.menu-icon{
+    cursor: pointer;
+}
+.menu-icon div{
+    width: 60px;
+    height: 3px;
+    background-color: #333;
+    margin: 8px 0;
+    transition: 0.4s;
+}
+.menu-content{
+    background-color: white;
+    display: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    overflow: hidden;
+    transition: opacity 5s ease-in-out;
+}
+.menu-content ul{
+    display: block;
+    list-style: none;
+    text-align: center;
+    padding: 50px;
+    transition-duration: 3s;
+}
+.menu-content ul li{
+    list-style-type: none;
+    opacity: 0;
+    font-size: 28pt;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    text-align: center;
+    transition: 0.5s;
+}
+.menu-content ul li:nth-child(odd){
+    transform: translate(-50%, 0);
+}
+.menu-content ul li:nth-child(even){
+    transform: translate(50%, 0);
+}
+.menu-content ul li a{
+    color: gray;
+    text-decoration: none;
+}
+.menu-content ul li:hover a{
+    color: black;
+    font-weight: bold;
+}
+.menu-content ul li::after,
+.menu-content ul li::before{
+    width: 0%;
+    content: '';
+    margin: 30px 0;
+    height: 10px;
+    background-color: blue;
+    transition: 0.5s;
+}
+.menu-content.openNav ul li{
+    transform: translate(0, 0);
+    opacity: 1;
+}
+
+.openNav{
+    display: inline;
+    visibility: visible;
+    opacity: 0.8;
+    transition: 0.5s;
+}
+.change div:nth-child(1) {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+  
+.change div:nth-child(2) {opacity: 0;}
+  
+.change div:nth-child(3) {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
