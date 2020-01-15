@@ -11,21 +11,46 @@
 		<head>
 			<title>Station - Subject</title>
 			<link rel="stylesheet" type="text/css" href="/base.css"/>
+			<link rel="stylesheet" type="text/css" href="/base.css"/>
+			<link rel="stylesheet" href="./CSS/global.css"/>
+			<link rel="stylesheet" href="./CSS/header.css"/>
+			<link rel="stylesheet" href="./CSS/slide-show.css"/>
+			<link rel="stylesheet" href="./CSS/content.css"/>
+			<script src="./Script/script.js"></script>
 		</head>
 		<body>
 			<xsl:call-template name='menubar'/>
-			<h1><xsl:value-of select='title'/></h1>
-			<pre><xsl:value-of select='description'/></pre>
-			<h1>Courses</h1>
-			<xsl:for-each select='courses/course'>
-				<h2>
-					<a>
-						<xsl:attribute name='href'>../course/<xsl:value-of select='identifier'/></xsl:attribute>
-						<xsl:value-of select='title'/>
-					</a>
-				</h2>
-				<pre><xsl:value-of select='description'/></pre>
-			</xsl:for-each>
+			<xsl:call-template name='slider'/>
+			<div class="container-content">
+				<div class="subject">
+					<div class="subject-title" onclick="switchSubject(0)">
+						<a href=""><span><xsl:value-of select='title'/></span></a>
+					</div>
+				</div>
+				<div class="content">
+					<xsl:for-each select='courses/course'>
+						<div class="card-course">
+							<div class="title">
+								<xsl:value-of select='title'/>
+							</div>
+							<div class="description">
+								<span>
+									<xsl:value-of select='description'/>
+								</span>
+							</div>
+							<div class="tail">
+								<div class="enroll">
+									<a>
+										<xsl:attribute name='href'>../course/<xsl:value-of select='identifier'/></xsl:attribute>
+										Enroll Now
+									</a>
+								</div>
+								<div class="point">95 Points</div>
+							</div>
+						</div>
+					</xsl:for-each>
+				</div>
+			</div>
 		</body>
 	</html>
 </xsl:template>

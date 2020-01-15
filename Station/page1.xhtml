@@ -5,7 +5,8 @@
 	<link rel="stylesheet" href="./CSS/global.css"/>
 	<link rel="stylesheet" href="./CSS/header.css"/>
 	<link rel="stylesheet" href="./CSS/slide-show.css"/>
-	<link rel="stylesheet" href="./CSS/content.css"/>
+    <link rel="stylesheet" href="./CSS/content.css"/>
+    <script src="./Script/script.js"></script>
 </head>
 <body>
     <header>
@@ -215,41 +216,4 @@
         </div>
     </div>
 </body>
-<script>
-	let showNavBar;
-	let navCont = document.querySelector('.menu-content');
-    let slides = document.getElementsByClassName('slide');
-    let btnSlides = document.getElementsByClassName('btn-slide');
-    let subjectCourses = document.getElementsByClassName('content');
-    let slideIndex = 0;
-    let t;
-    setShowImgIndex(slideIndex);
-    
-	function toggNavBar(self){
-        self.classList.toggle('change');
-		navCont.classList.toggle('openNav');
-		console.log(navCont.length);
-	}
-    
-    function setShowImgIndex(index){
-        btnSlides[slideIndex].style.background = "transparent";
-        slides[slideIndex].style.display = "none";
-        btnSlides[index].style.background = "white";
-        slides[index].style.display = "block";
-        slideIndex = index;
-        var nextSlide = (index+1) % slides.length;
-        stopAutoSlide();
-        t = setTimeout('setShowImgIndex('+nextSlide+')', 3000);
-    }
-    function contineSlide(){
-        setShowImgIndex(slideIndex);
-    }
-    function stopAutoSlide(){ // stop the auto slide show
-        clearTimeout(t);
-        t=0;
-    }
-    function switchSubject(index){
-        subjectCourses[index].style.display = "block";
-    }
-</script>
 </html>

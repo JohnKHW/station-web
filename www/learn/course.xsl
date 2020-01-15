@@ -11,9 +11,15 @@
 		<head>
 			<title>Station - Course</title>
 			<link rel="stylesheet" type="text/css" href="/base.css"/>
+			<link rel="stylesheet" href="./CSS/global.css"/>
+			<link rel="stylesheet" href="./CSS/header.css"/>
+			<link rel="stylesheet" href="./CSS/slide-show.css"/>
+			<link rel="stylesheet" href="./CSS/content.css"/>
+			<script src="./Script/script.js"></script>
 		</head>
 		<body>
 			<xsl:call-template name='menubar'/>
+			<xsl:call-template name='slider'/>
 			<a>
 				<xsl:attribute name='href'>../subject/<xsl:value-of select='subject'/></xsl:attribute>
 				Back to subject
