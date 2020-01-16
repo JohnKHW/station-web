@@ -1,6 +1,6 @@
 module Station.Constant (
-	Role,
-	auth_realm, public_home, private_home
+    Role,
+    auth_realm, public_home, private_home
 ) where
 
 import Prelude ()
