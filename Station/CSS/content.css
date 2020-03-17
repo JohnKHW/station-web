@@ -1,31 +1,27 @@
 .container-content{
-    padding: 0 80px;
-    background-color: rgba(0,0,0,0.05);
-    width: auto;
-}
-.container-content::after{
-    content: ".";
-    color: transparent;
+    margin-top: 0;
 }
 .container-content .subject{
-    border-bottom: 4px solid rgba(0,0,0,0.1);
+    border-bottom: 2px solid rgba(0,0,0,0.1);
     display: flex;
     width: 30%;
-    margin-bottom: 30px;
+    margin-bottom: 12px;
 }
 .container-content .subject-title{
     padding: 15px;
-    padding-top: 40px;
+    padding-top: 30px;
     cursor: pointer;
     position: relative;
-    width: 100px;
+    width: 50px;
     text-align:center; 
     display: flex;
     justify-content: center;
 }
 .container-content .subject-title a{
     color: black;
-    
+    font-size: 7pt;
+}
+.container-content .subject-title:hover a{
     font-weight: bold;
 }
 .container-content .subject-title::after{
@@ -33,59 +29,61 @@
     position: absolute;
     width: 100%;
     left: 0;
-    bottom: -4px;
+    bottom: -2px;
 }
 .container-content .subject-title:hover::after{
-    border-bottom: 4px solid black;
+    border-bottom: 2px solid black;
 }
-.container-content .content{
+.content{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    width: 100%;
 }
-.container-content .card-course{
-    margin: 20px;
+.card-course{
+    margin: 12px;
     background-color: white;
-    box-shadow: 0 0 25px rgba(0,0,0,0.15);
-    height: 200px;
-    width: 350px;
-    border-radius: 10px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.1);
+    height: 175px;
+    width: 290px;
     overflow: hidden;
 }
-.container-content .card-course .title{
+.card-course .title{
     font-weight: bold;
-    font-size: 1.3em;
+    font-size: 18px;
     padding: 15px;
 }
-.container-content .card-course .title:hover{
-    background: rgba(0, 0, 0, 0.13);
+.card-course .title:hover{
+    background: rgba(139, 139, 139, 0.1);
 }
-.container-content .card-course .description{
+.card-course .description{
     line-height: 1.5;
+    font-size: 14px;
     padding: 15px;
     padding-top: 0;
     word-wrap: break-word;
-    height: 80px;
+    height: 60px;
     overflow: auto;
-    border-bottom: 2px solid rgba(0,0,0,0.1);
+    border-bottom: 2px solid rgba(139, 139, 139, 0.1);
 }
-.container-content .card-course .tail{
+.card-course .tail{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px;
-    height: 20px;
+    height: 17px;
     transition: 0.2s;
+    font-size: 14px;
 }
-.container-content .card-course .tail:hover{
-    background: rgba(0, 0, 0, 0.1);
+.card-course .tail:hover{
+    background: rgba(139, 139, 139, 0.1);
 }
-.container-content .tail .enroll a{
-    color: rgb(22, 158, 22);
+.tail .enroll a{
+    color: #39b54a;
 }
-.container-content .tail .enroll a:hover{
+.tail .enroll a:hover{
     color: rgb(97, 209, 97);
 }
-.container-content .tail .point{
+.tail .point{
     font-weight: bold;
 }

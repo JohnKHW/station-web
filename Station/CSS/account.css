@@ -1,0 +1,147 @@
+.account-function{
+
+}
+.account-function .title{
+    padding: 30px 0;
+    font-size: 32px;
+    font-weight: bold;
+}
+.account-function .account-setting{
+    width: 100%;
+}
+.account-setting .container-attributes{
+    width: 100%;
+    display: inline-flex;
+    justify-self: left;
+    padding-bottom: 15px;
+}
+.container-attributes .account-attribute{
+    margin-right: 25px;
+}
+.container-attributes .final-attribute{
+    margin-right: 0;
+}
+.attribute .attribute-name{
+    height: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #4a4a4a;
+    margin: 6px 0;
+}
+.attribute-value .value{
+    box-sizing: border-box;
+    width: 245px;
+    height: 35px;
+    border-radius: 5px;
+    padding: 0 10px;
+    border: solid 1px #dfe3e9;
+    object-fit: contain;
+}
+
+.attribute-value .final-value{
+    width: 180px;
+    margin-right: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-right: 0px;
+}
+.select {
+    position:relative;
+    
+}
+.select select#role {
+    background-image:url(../Image/role.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-origin: content-box;
+    padding: 7px;
+    padding-left: 15px;
+    text-indent: 30px;
+    appearance: none;
+    -webkit-appearance: none;
+}
+.select::after{
+    content:"";
+    background-image: url(../Image/arrow.png);
+    font-size:0.5em;
+    font-family:arial;
+    position:absolute;
+    width: 20px;
+    height: 20px;
+    right: 0;
+    padding: 7px;
+    padding-right: 15px;
+    vertical-align: center;
+    top: 50%;
+    transform:translate(0, -50%);
+    text-align: center;
+    z-index: 100;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-origin: content-box;
+    filter: brightness(0.7);
+    pointer-events: none;
+}
+.select:hover::after{
+    filter: brightness(0.1);
+}
+.btn-attribute{
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:35px;
+    cursor: pointer;
+}
+.btn-image{
+    height: 15px;
+    transition: 0.1s;
+}
+.btn-image:hover{
+    color: #4a4a4a;
+    filter: brightness(1.4);
+    height: 20px;
+}
+.btn-lock{
+    content: url("../Image/lock.png");
+}
+.btn-unlock{
+    content: url("../Image/unlock.png");
+}
+.btn-remove{
+    content: url("../Image/remove.png");
+}
+.btn-submit{
+    height: 35px;
+    width: 90px;
+    
+}
+.btn-submit input{
+    height: 100%;
+    width: 100%;
+    border-radius: 0 5px 5px 0;
+    border: solid 1px #dfe3e9;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-left: 0px;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+}
+.btn-submit input:hover{
+    filter: brightness(115%);
+}
+.btn-submit .btn-add{
+    background-color: #0db5ad;
+}
+.btn-submit .btn-save{
+    background-color: #4a90e2;
+}
+pre {
+    width: auto;
+    height: 2px;
+    border: none;
+    color: #dededf;
+    background-color: #dededf;
+    margin: 40px 55px;
+}

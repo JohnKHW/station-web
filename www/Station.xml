@@ -1,9 +1,9 @@
 <?xml version='1.0' ?>
-    <?xml-stylesheet type="text/xsl" href="./home.xsl" ?>
+    <?xml-stylesheet type="text/xsl" href="/home.xsl" ?>
         <home>
             <session>
-                <name>john</name>
-                <role>SysOp</role>
+                <name>Test</name>
+                <role>User</role>
                 <mark>0</mark>
             </session>
             <subjects>

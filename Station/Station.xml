@@ -1,0 +1,24 @@
+<?xml version='1.0' ?>
+    <?xml-stylesheet type="text/xsl" href="/home.xsl" ?>
+        <home>
+            <session>
+                <name>Test</name>
+                <role>User</role>
+                <mark>0</mark>
+            </session>
+            <subjects>
+                <subject>
+                    <identifier>1</identifier>
+                    <title>Computer</title>
+                    <description>A computer is a machine that can be instructed to carry out sequences of arithmetic or logical operations automatically via computer programming. Modern computers have the ability to follow generalized sets of operations, called programs. These programs enable computers to perform an extremely wide range of tasks. A &quot;complete&quot; computer including the hardware, the operating system (main software), and peripheral equipment required and used for &quot;full&quot; operation can be referred to as a computer system. This term may as well be used for a group of computers that are connected and work together, in particular a computer network or computer cluster. </description>
+                </subject>
+                <subject>
+                    <identifier>2</identifier>
+                    <title>Law</title>
+                    <description>Law is commonly understood as a system of rules that are created and enforced through social or governmental institutions to regulate conduct, although its precise definition is a matter of longstanding debate. It has been variously described as a science and the art of justice. State-enforced laws can be made by a collective legislature or by a single legislator, resulting in statutes, by the executive through decrees and regulations, or established by judges through precedent, normally in common law jurisdictions. Private individuals can create legally binding contracts, including arbitration agreements that may elect to accept alternative arbitration to the normal court process. The formation of laws themselves may be influenced by a constitution, written or tacit, and the rights encoded therein. The law shapes politics, economics, history and society in various ways and serves as a mediator of relations between people.</description>
+                </subject>
+            </subjects>
+			<embed src="Subject.xml">
+			
+			</embed>
+        </home>

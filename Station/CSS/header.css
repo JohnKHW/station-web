@@ -1,7 +1,12 @@
 header{
+    width: 100%;
+    top: 0;
+    position: fixed;
+    background-color: white;
+    z-index: 2;
 }
 .header{
-    margin: 20px 80px;
+    margin: 25px 50px;
     height: 100px;
     width: auto;
     display: flex;
@@ -11,22 +16,26 @@ header{
 img{
     height: 100%;
 }
-.container-basic-info{
-    
-}
 .container-basic-info .logo{
-    height: 100px;
+    height: 106px;
 }
 .align-bot{
     display: inline-block;
     vertical-align: bottom; 
 }
 .container-basic-info .sponsor{
+    margin: 0 24px;
     display: inline;
-    margin: 10px;
+}
+.container-basic-info .vice-sponsor{
+    height: 65%;
+    transform: translateY(-25%);
 }
 .basic-info-font{
-    font-size: 17pt;
+    font-size: 16pt;
+    font-family: Lato;
+    text-decoration: none;
+    color: black;
 }
 .container-basic-info .user-info{
     display: flex;
@@ -34,6 +43,8 @@ img{
 .container-basic-info .user-data{
     margin: auto 20px;
     cursor: pointer;
+    text-decoration: none;
+    color: black;
 }
 .container-basic-info .user-icon{
     height: 25px;
@@ -48,17 +59,14 @@ img{
 .container-basic-info .user-data:hover .user-score{
     opacity: 1;
 }
-.container-menu{
-    
-}
 .menu-icon{
     cursor: pointer;
 }
 .menu-icon div{
-    width: 60px;
-    height: 3px;
+    width: 32px;
+    height: 2px;
     background-color: #333;
-    margin: 8px 0;
+    margin: 5px 0;
     transition: 0.4s;
 }
 .menu-content{
@@ -81,7 +89,7 @@ img{
 .menu-content ul li{
     list-style-type: none;
     opacity: 0;
-    font-size: 28pt;
+    font-size: 30pt;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -96,7 +104,7 @@ img{
     transform: translate(50%, 0);
 }
 .menu-content ul li a{
-    color: gray;
+    color: #9b9b9b;
     text-decoration: none;
 }
 .menu-content ul li:hover a{
@@ -116,21 +124,19 @@ img{
     transform: translate(0, 0);
     opacity: 1;
 }
-
 .openNav{
     display: inline;
     visibility: visible;
-    opacity: 0.9;
-    transition: 0.5s;
+    opacity: 0.95;
 }
 .change div:nth-child(1) {
-    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-    transform: rotate(-45deg) translate(-9px, 6px);
+    -webkit-transform: rotate(-45deg) translate(-5px, 3px);
+    transform: rotate(-45deg) translate(-5px, 3px);
 }
   
 .change div:nth-child(2) {opacity: 0;}
   
 .change div:nth-child(3) {
-    -webkit-transform: rotate(45deg) translate(-8px, -8px);
-    transform: rotate(45deg) translate(-8px, -8px);
+    -webkit-transform: rotate(45deg) translate(-7px, -5px);
+    transform: rotate(45deg) translate(-7px, -5px);
 }

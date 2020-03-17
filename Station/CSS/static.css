@@ -1,0 +1,52 @@
+body{
+    font-family: PingFang;
+}
+.container-content{
+    margin-top: 0;
+    padding: 30px 105px;
+}
+.container-content .title{
+    font-size: 30pt;
+    font-weight: bold;
+    padding: 10px 0;
+}
+.container-content .content{
+    padding: 10px 0;
+}
+.content .subtitle{
+    font-size: 25pt;
+    font-weight: bold;
+    padding: 10px 0;
+}
+.content-article{
+    padding: 0;
+    margin: 0;
+}
+.content-article pre{
+    padding: 0;
+    margin: 0;
+    overflow-x: auto;
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -pre-wrap;
+    white-space: -o-pre-wrap;
+    word-wrap: break-word;
+    font-size: 15pt;
+    line-height: 1.36;
+    font-weight: 200;
+}
+.content .content-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 25px 0;
+}
+.content-image img{
+    box-shadow: 0 0 10px grey;
+    width: 100%;
+}
+.chapter-title{
+    font-size: 25pt;
+    font-weight: bold;
+    padding: 30px 0;
+}
