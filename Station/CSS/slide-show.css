@@ -16,7 +16,8 @@
     display: none;
 }
 .container-slide-show img{
-    padding: 0;
+    height: 100%;
+    width: 100%;
 }
 .container-slide-show .container-btn-slide{
     text-align: center;
