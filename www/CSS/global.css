@@ -1,0 +1,27 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Lato;
+    background-color: #f2f2f2;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+p {
+    text-decoration: none;
+    color: black;
+}
+.container-content{
+    margin-top: 150px;
+    padding: 0 50px;
+    width: auto;
+}
+.container-content::after{
+    content: ".";
+    color: transparent;
+}
+*:focus {
+    outline: none;
+}

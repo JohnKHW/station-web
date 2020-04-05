@@ -1,0 +1,165 @@
+body{
+    max-height: 100vh;
+    overflow: hidden;
+}
+.container-content{
+    padding: 0;
+    width: 100%;
+}
+
+.container-title{
+    display: flex;
+    padding: 10px 50px;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 5px 10px rgba(139, 139, 139, 0.1);
+    transition: all 0.2s;
+}
+.container-title:hover{
+    background-color: rgba(139, 139, 139, 0.1);
+    box-shadow: 0px 5px 10px rgba(139, 139, 139, 0.3);
+}
+.container-title:hover .course-title{
+    color: rgb(50,50,50,0.8);
+}
+.container-title .btn-back:hover a span{
+    color: rgb(100,100,100,0.8);
+}
+.container-title div{
+    margin-right:50px;
+    font-size: 20pt;
+    color: darkgrey;
+    transition: all 0.2s;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; 
+}
+.content{
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+.session-title{
+    text-align: center;
+    text-shadow: 0 0 3px rgba(139, 139, 139, 0.7);
+    padding: 15px;
+    font-size: 20pt;
+    color: rgba(99, 99, 99, 0.9);
+    background-color: rgba(139, 139, 139, 0.1);
+    transition: all 0.2s;
+}
+.session-title:hover{
+    background-color: rgba(139, 139, 139, 0.3);
+    text-shadow: 8px 5px 3px rgba(139, 139, 139, 0.7);
+    color: black;
+    transform: scale(1.1);
+}
+.container-lesson{
+    width: 20%;
+    height: calc(100vh - 200px);
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.lesson{
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; 
+    display: flex;
+    margin: 10px;
+    padding: 10px 5px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(139, 139, 139, 0.5);  
+    transition: all 0.3s;
+}
+.lesson-list{
+    overflow: auto;
+    height: 100%;
+}
+.lesson:hover{
+    background-color: rgba(139, 139, 139, 0.1);
+}
+.lesson div{
+    margin: 5px;
+    font-size: 15pt;
+    transition: all 0.2s;
+}
+.lesson-order{
+    width: 25px;
+    height: 25px;
+    color: white;
+    font-weight: bold;
+    background: rgb(97, 209, 97);
+    text-align: center;
+    border-radius: 50%;
+    transition: all 0.2s;
+}
+.lesson .lesson-title{
+    transition: all 0.2s;
+}
+.lesson:hover div{
+    margin: 3px;
+    font-size: 17pt;
+}
+.lesson:hover .lesson-order{
+    background: #39b54a;
+    width: 29px;
+    height: 29px;
+    color: rgba(223, 231, 235, 0.9);
+}
+.lesson:hover .lesson-title{
+    font-weight: bold;
+}
+.lesson-list a:active .lesson{
+    background: rgba(41, 41, 41, 0.7);
+}
+.lesson-list a:active .lesson-order{
+    background: #f13bf1;
+    color: rgba(80, 80, 80, 0.9);
+}
+.lesson-list a:active .lesson-title{
+    color: white;
+}
+.container-lesson .report{
+    margin: 5px auto;
+    transition: all 0.2s;
+    font-weight: bold;
+    text-decoration: underline;
+    color: rgba(80, 80, 80, 0.5);
+    padding: 5px;
+}
+.container-lesson .report:hover{
+    color: rgba(80, 80, 80, 0.9);
+    transform: scale(1.1);
+}
+.container-intro{
+    width: 80%;
+    height: calc(100vh - 225px);
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.container-intro .content{
+    width: 50%;
+    margin: 10px auto;
+    margin-bottom: 60px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(139, 139, 139, 0.5);
+    overflow: auto;  
+}
+.container-intro .content span{
+    padding: 0 20px;
+    word-wrap: break-word;      /* IE 5.5-7 */
+    white-space: -moz-pre-wrap; /* Firefox 1.0-2.0 */
+    white-space: pre-line;      /* current browsers */
+}

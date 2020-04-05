@@ -50,3 +50,57 @@ body{
     font-weight: bold;
     padding: 30px 0;
 }
+.account-login{
+    display: inline-flex;
+    justify-self: left;
+}
+.account-login .account-attribute{
+    margin-left: 25px;
+}
+.attribute .attribute-name{
+    height: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #4a4a4a;
+    margin: 6px 0;
+}
+.attribute-value .value{
+    box-sizing: border-box;
+    width: 245px;
+    height: 35px;
+    border-radius: 5px;
+    padding: 0 10px;
+    border: solid 1px #dfe3e9;
+    object-fit: contain;
+}
+
+.attribute-value .final-value{
+    width: 180px;
+    margin-right: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-right: 0px;
+}
+.btn-submit{
+    height: 35px;
+    width: 90px;
+    
+}
+.btn-submit input{
+    height: 100%;
+    width: 100%;
+    border-radius: 0 5px 5px 0;
+    border: solid 1px #dfe3e9;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-left: 0px;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+}
+.btn-submit input:hover{
+    filter: brightness(115%);
+}
+.btn-submit .btn-login{
+    background-color: #0db5ad;
+}

@@ -77,12 +77,14 @@ img{
     z-index: 2;
     visibility: hidden;
     position: fixed;
+    overflow: hidden;
     transition: opacity 0.5s ease-in-out;
 }
 .menu-content ul{
     display: block;
     list-style: none;
     text-align: center;
+    padding: 50px;
 }
 .menu-content ul li{
     list-style-type: none;
